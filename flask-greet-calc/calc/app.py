@@ -74,7 +74,7 @@ def math_init(oper):
 @app.route("/")
 def home():
     """Display the calculator form"""
-    return render_template("/templates/calculator.html")
+    return render_template("calculator.html")
 
 @app.route("/calculate", methods=["POST"])
 def calculate():
