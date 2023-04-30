@@ -84,3 +84,8 @@ def calculate():
     b = int(request.form["b"])
     result = operators[oper](a, b)
     return render_template("result.html", result=result)
+
+@app.route("/back", methods=["POST"])
+def back():
+    """Redirect to the home page"""
+    return redirect(url_for('home'))
